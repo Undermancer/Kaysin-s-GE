@@ -1,3 +1,0 @@
-D:/Kaysin-s-GE/build/CMakeFiles/KaysinsGE.dir
-D:/Kaysin-s-GE/build/CMakeFiles/ALL_BUILD.dir
-D:/Kaysin-s-GE/build/CMakeFiles/ZERO_CHECK.dir
