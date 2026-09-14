@@ -1,0 +1,17 @@
+# Archivos de compilación de CMake
+build/
+out/
+
+# Archivos de Visual Studio
+.vs/
+*.sln
+*.vcxproj
+*.vcxproj.filters
+*.vcxproj.user
+
+# Archivos de usuario locales de CMake (¡Vital!)
+CMakeUserPresets.json
+
+# Archivos autogenerados por el sistema operativo
+.DS_Store
+Thumbs.db
