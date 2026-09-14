@@ -1,0 +1,68 @@
+Detecting compiler hash for triplet x64-windows...
+Compiler found: C:/Program Files/Microsoft Visual Studio/2022/Community/VC/Tools/MSVC/14.44.35207/bin/Hostx64/x64/cl.exe
+The following packages are already installed:
+    fmt:x64-windows@12.2.0#1
+  * vcpkg-cmake:x64-windows@2025-08-07
+  * vcpkg-cmake-config:x64-windows@2026-07-21
+The following packages will be built and installed:
+    sdl3:x64-windows@3.4.16 -- git+https://github.com/microsoft/vcpkg@a0345eab430390a0758a40d2062eda9cb43f670c
+Restored 0 package(s) from C:\Users\User\AppData\Local\vcpkg\archives in 44.8 us. Use --debug to see more details.
+Installing 1/1 sdl3:x64-windows@3.4.16...
+sdl3:x64-windows@3.4.16 package ABI: 233f3a7f572f16e6ea798c5df7ec98796e8e2a96672a12dac2cdf96e6c7346c7
+Building sdl3:x64-windows@3.4.16...
+C:\Users\User\AppData\Local\vcpkg\registries\git-trees\a0345eab430390a0758a40d2062eda9cb43f670c: info: installing from git registry git+https://github.com/microsoft/vcpkg@a0345eab430390a0758a40d2062eda9cb43f670c
+Downloading https://github.com/libsdl-org/SDL/archive/release-3.4.16.tar.gz -> libsdl-org-SDL-release-3.4.16.tar.gz
+Successfully downloaded libsdl-org-SDL-release-3.4.16.tar.gz
+-- Extracting source D:/vcpkg/downloads/libsdl-org-SDL-release-3.4.16.tar.gz
+-- Applying patch fix-freebsd.patch
+-- Using source at D:/vcpkg/buildtrees/sdl3/src/ase-3.4.16-107b36226a.clean
+-- Configuring x64-windows
+CMake Warning at D:/Kaysin-s-GE/build/vcpkg_installed/x64-windows/share/vcpkg-cmake/vcpkg_cmake_configure.cmake:346 (message):
+  The following variables are not used in CMakeLists.txt:
+
+      SDL_UNIX_CONSOLE_BUILD
+
+  Please recheck them and remove the unnecessary options from the
+  `vcpkg_cmake_configure` call.
+
+  If these options should still be passed for whatever reason, please use the
+  `MAYBE_UNUSED_VARIABLES` argument.
+Call Stack (most recent call first):
+  C:/Users/User/AppData/Local/vcpkg/registries/git-trees/a0345eab430390a0758a40d2062eda9cb43f670c/portfile.cmake:58 (vcpkg_cmake_configure)
+  scripts/ports.cmake:209 (include)
+
+
+-- Building x64-windows-dbg
+-- Building x64-windows-rel
+-- Fixing pkgconfig file: D:/vcpkg/packages/sdl3_x64-windows/lib/pkgconfig/sdl3.pc
+-- Using cached msys2-mingw-w64-x86_64-pkgconf-1~2.5.1-1-any.pkg.tar.zst
+-- Using cached msys2-msys2-runtime-3.6.5-1-x86_64.pkg.tar.zst
+-- Using msys root at D:/vcpkg/downloads/tools/msys2/3e71d1f8e22ab23f
+-- Fixing pkgconfig file: D:/vcpkg/packages/sdl3_x64-windows/debug/lib/pkgconfig/sdl3.pc
+-- Installing: D:/vcpkg/packages/sdl3_x64-windows/share/sdl3/usage
+-- Performing post-build validation
+Starting submission of sdl3:x64-windows@3.4.16 to 1 binary cache(s) in the background
+Elapsed time to handle sdl3:x64-windows: 35 s
+Installed contents are licensed to you by owners. Microsoft is not responsible for, nor does it grant any licenses to, third-party packages.
+Packages installed in this vcpkg installation declare the following licenses:
+Apache-2.0
+BSD-3-Clause
+MIT
+Zlib
+The package fmt provides CMake targets:
+
+    find_package(fmt CONFIG REQUIRED)
+    target_link_libraries(main PRIVATE fmt::fmt)
+
+    # Or use the header-only version
+    find_package(fmt CONFIG REQUIRED)
+    target_link_libraries(main PRIVATE fmt::fmt-header-only)
+
+sdl3 provides CMake targets:
+
+  find_package(SDL3 CONFIG REQUIRED)
+  target_link_libraries(main PRIVATE SDL3::SDL3)
+
+Waiting for 1 remaining binary cache submissions...
+Completed submission of sdl3:x64-windows@3.4.16 to 1 binary cache(s) in 1.1 s (1/1)
+All requested installations completed successfully in: 35 s
